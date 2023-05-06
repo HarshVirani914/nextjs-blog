@@ -10,9 +10,9 @@ export default function App({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-V124RWDTB3"
       ></Script>
       <Script>
-        window.dataLayer = window.dataLayer || []; function gtag()
+        {`window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-V124RWDTB3');
+        gtag('js', new Date()); gtag('config', 'G-V124RWDTB3');`}
       </Script>
       <Component {...pageProps} />
       <Analytics />
