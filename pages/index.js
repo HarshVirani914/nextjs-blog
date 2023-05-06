@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import Script from "next/script";
 
 export function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -18,15 +19,15 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-V124RWDTB3"
-        ></script>
-        <script>
+        ></Script>
+        <Script>
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-V124RWDTB3');
-        </script>
+        </Script>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
