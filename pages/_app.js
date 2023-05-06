@@ -14,6 +14,11 @@ export default function App({ Component, pageProps }) {
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-V124RWDTB3');`}
       </Script>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2574897296071141"
+        crossorigin="anonymous"
+      ></Script>
       <Component {...pageProps} />
       <Analytics />
     </>
